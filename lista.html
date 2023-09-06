@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lista.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <div id="nav-container">
+            <h1 id="nav-logo">ListaPro</h1>
+            <div id="nav-links">
+                <a href="index.html" class="nav-link" href>Home</a>
+                <a class="nav-link" href>App</a>
+            </div>
+            <svg id="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              </div>
+            </nav>
+
+
+<main id="main-container">
+    <div id="lista-de-tareas">
+        <form id="agregar">
+
+            <input id="agg-tareas" type="text" placeholder="Agregar Tarea">
+
+            <button id="agg-button" disabled>
+                <svg id="agg-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                </svg>
+            </button>
+              
+        </form>
+
+        <div id="filter">
+            <button id="todas" class="filter-value">Todas</button>
+            <button id="hechas" class="filter-value">Hechas</button>
+            <button id="pendiente" class="filter-value">Pendiente</button>
+        </div>
+
+
+
+        <div id="Tareas"> 
+            <ul id="list">             
+                
+           
+</ul>
+
+</div>
+
+</div>
+    
+</main>
+   <script src="lista.js"></script> 
+</body>
+</html>
+
+

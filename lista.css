@@ -1,0 +1,261 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+body,   h1, h2, p {
+    margin: 0;
+     
+}
+
+#nav-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+body {
+    padding-top: 4rem;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+ }
+
+ #nav-bar {
+    background-color: #312e81;
+    height: 4rem;
+position: fixed;
+padding: 0 1rem;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+ }
+
+ #nav-container {
+    max-width: 90rem;
+    color: #dbeafe;
+    margin: 0 auto;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-icon {
+    border: 1px; color: #dbeafe;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    }
+
+#nav-icon:active {
+    background-color: #172554;
+    }
+
+    #nav-links {
+        display: none;
+        gap: 2rem;
+     }
+    
+     .nav-link {
+        color: #dbeafe;
+        text-decoration: none;
+     }
+    
+     .nav-link:hover{
+    color:#7a7a7b;
+     }
+
+     @media (min-width: 1024px) {
+        #nav-icon {
+            display: none;
+        }
+        #nav-links{
+            display: flex;
+        }
+    }
+
+    /* main */
+
+    #main-container{
+        background-color: #e3e8f5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    #lista-de-tareas {
+        width: 100%;
+        min-height: 85%;
+       
+    }
+
+    #agregar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+
+   #agg-tareas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30%;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+
+   }
+
+#agg-button{
+    display: flex;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #e3e8f5;
+}
+
+#agg-button:disabled{
+    color: white;
+}
+
+#agg-icon{
+    border: 1px; 
+    padding: 0.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 0.5rem;
+
+}
+
+#agg-button:active{
+    background-color: rgb(167, 167, 167);
+
+}
+
+#filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.filter-value{
+    border-radius: 1rem;
+    border: 2px solid #779cf7;
+    padding: 1rem 2.2rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.filter-value:active{
+    background-color: #8facf8d3;
+}
+
+
+
+
+#Tareas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+#list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 90%;
+    padding: 0;
+}
+
+.tasks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+    background-color: white;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+.tasks-done{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+    background-color: rgba(114, 200, 234, 0.342);
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+.delete-button{
+    background-color: transparent;
+    width: 10%;
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+
+.delete-icon {
+     color: rgb(220, 8, 8);
+     height: 80%; 
+}
+
+.delete-icon:hover{
+    transform: scale(1.5);
+}
+
+.text-task {
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.check-button{
+    background-color: transparent;
+    width: 10%;
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+}
+
+.check-icon {
+   color: rgb(42, 180, 7);
+    border-radius: 0.5rem;
+    height: 80%;
+}
+
+.check-icon:hover{
+    transform: scale(1.5);
+}
+
+.return-icon{
+    color: blue;
+    border-radius: 0.5rem;
+    height: 80%;
+}
